@@ -1,0 +1,24 @@
+# Neovim
+.netrwhist
+*~
+
+# Lazy.nvim
+lazy-lock.json
+
+# Mason
+mason/
+
+# Undo files
+*.un~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Plugin data
+spell/
+swap/
+undodir/
