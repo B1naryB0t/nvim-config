@@ -46,6 +46,8 @@ vim.keymap.set("i", "<C-a>", "<Esc>ggVG", { desc = "Select all from insert mode"
 -- === TMUX INTEGRATION ===
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>",
   { desc = "Open tmux sessionizer" })
+vim.keymap.set("n", "<leader>gg", "<cmd>silent !tmux new-window -c $(pwd) lazygit<CR>",
+  { desc = "Open LazyGit in tmux window" })
 
 -- === CONFIG MANAGEMENT ===
 vim.keymap.set("n", "<leader><leader>", function()

@@ -10,7 +10,6 @@ return {
   { import = "b1naryb0t.lazy.harpoon" },      -- Quick file switching
   { import = "b1naryb0t.lazy.undotree" },     -- Undo history visualization
   { import = "b1naryb0t.lazy.nvim-tree" },    -- File explorer
-  { import = "b1naryb0t.lazy.fugitive" },     -- Git integration
   { import = "b1naryb0t.lazy.trouble" },      -- Diagnostics panel
   { import = "b1naryb0t.lazy.zenmode" },      -- Distraction-free editing
   { import = "b1naryb0t.lazy.twilight" },     -- Dim inactive code
