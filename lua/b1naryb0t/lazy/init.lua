@@ -14,6 +14,7 @@ return {
   { import = "b1naryb0t.lazy.zenmode" },      -- Distraction-free editing
   { import = "b1naryb0t.lazy.twilight" },     -- Dim inactive code
   { import = "b1naryb0t.lazy.code_runner" },  -- Execute code snippets
+  { import = "b1naryb0t.lazy.vim-pencil" },   -- Better prose writing
 
   -- Core functionality modules
   { import = "b1naryb0t.lazy.mason" },        -- LSP server management
