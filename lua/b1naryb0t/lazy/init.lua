@@ -1,8 +1,6 @@
 -- ~/.config/nvim/lua/b1naryb0t/lazy/init.lua
 -- Main plugin imports - individual files handle their own dependencies
 return {
-  -- Navigation & Editor Enhancement
-  "christoomey/vim-tmux-navigator",  -- Seamless tmux/vim navigation
 
   -- Import modular configurations
   { import = "b1naryb0t.lazy.telescope" },    -- File finder, grep, git files
@@ -15,8 +13,8 @@ return {
   { import = "b1naryb0t.lazy.twilight" },     -- Dim inactive code
   { import = "b1naryb0t.lazy.code_runner" },  -- Execute code snippets
   { import = "b1naryb0t.lazy.vim-pencil" },   -- Better prose writing
-
-  -- Core functionality modules
+  { import = "b1naryb0t.lazy.rest" },
+	-- Core functionality modules
   { import = "b1naryb0t.lazy.mason" },        -- LSP server management
   { import = "b1naryb0t.lazy.cmp" },          -- Autocompletion engine
   { import = "b1naryb0t.lazy.null-ls" },      -- Formatting & linting

@@ -76,12 +76,13 @@ sudo apt install ripgrep fd-find  # Ubuntu/Debian
 ### Quick Navigation (Harpoon)
 | Key | Action |
 |-----|--------|
-| `<leader>a` | Add file to harpoon |
-| `<C-e>` | Toggle harpoon menu |
-| `<C-h>` | Go to harpoon file 1 |
-| `<C-t>` | Go to harpoon file 2 |
-| `<C-n>` | Go to harpoon file 3 |
-| `<C-s>` | Go to harpoon file 4 |
+| `<leader>a` | Add current file to harpoon |
+| `<leader>h` | Toggle harpoon menu |
+| `<leader>1-8` | Jump to harpoon slot 1-8 |
+| `<leader>d1-8` | Remove harpoon slot 1-8 from list |
+| `<leader>dr` | Remove current file from harpoon |
+| `<C-k>` | Go to previous harpoon file |
+| `<C-j>` | Go to next harpoon file |
 
 ### LSP & Code
 | Key | Action |
