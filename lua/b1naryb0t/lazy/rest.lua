@@ -28,8 +28,8 @@ return {
     local keymap = vim.api.nvim_set_keymap
     local opts = { noremap = true, silent = true }
 
-    keymap("n", "<leader>h", "<Plug>RestNvim", opts)      -- execute request
-    keymap("n", "<leader>hp", "<Plug>RestNvimPreview", opts) -- preview curl
-    keymap("n", "<leader>hl", "<Plug>RestNvimLast", opts)    -- rerun last
+    keymap("n", "<leader>rh", "<Plug>RestNvim", opts)      -- execute request
+    keymap("n", "<leader>rhp", "<Plug>RestNvimPreview", opts) -- preview curl
+    keymap("n", "<leader>rhl", "<Plug>RestNvimLast", opts)    -- rerun last
   end,
 }

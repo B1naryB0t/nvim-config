@@ -27,16 +27,19 @@ A modern, feature-rich Neovim configuration focused on productivity and developm
 ### Quick Install
 
 1. **Backup existing config** (if you have one):
+
    ```bash
    mv ~/.config/nvim ~/.config/nvim.backup
    ```
 
 2. **Clone this repository**:
+
    ```bash
    git clone https://github.com/yourusername/nvim-config.git ~/.config/nvim
    ```
 
 3. **Start Neovim**:
+
    ```bash
    nvim
    ```
@@ -66,63 +69,95 @@ sudo apt install ripgrep fd-find  # Ubuntu/Debian
 ### Leader Key: `<Space>`
 
 ### File Navigation
-| Key | Action |
-|-----|--------|
-| `<leader>pv` | Toggle file tree |
-| `<leader>pf` | Find files |
-| `<C-p>` | Git files (fallback to find files) |
-| `<leader>ps` | Live grep search |
+
+| Key          | Action                             |
+| ------------ | ---------------------------------- |
+| `<leader>pv` | Toggle file tree                   |
+| `<leader>pf` | Find files                         |
+| `<C-p>`      | Git files (fallback to find files) |
+| `<leader>ps` | Live grep search                   |
 
 ### Quick Navigation (Harpoon)
-| Key | Action |
-|-----|--------|
-| `<leader>a` | Add current file to harpoon |
-| `<leader>h` | Toggle harpoon menu |
-| `<leader>1-8` | Jump to harpoon slot 1-8 |
+
+| Key            | Action                            |
+| -------------- | --------------------------------- |
+| `<leader>a`    | Add current file to harpoon       |
+| `<leader>h`    | Toggle harpoon menu               |
+| `<leader>1-8`  | Jump to harpoon slot 1-8          |
 | `<leader>d1-8` | Remove harpoon slot 1-8 from list |
-| `<leader>dr` | Remove current file from harpoon |
-| `<C-k>` | Go to previous harpoon file |
-| `<C-j>` | Go to next harpoon file |
+| `<leader>hd`   | Clear all harpoon marks           |
+| `<leader>hk`   | Go to previous harpoon file       |
+| `<leader>hj`   | Go to next harpoon file           |
 
 ### LSP & Code
-| Key | Action |
-|-----|--------|
-| `gd` | Go to definition |
-| `K` | Hover documentation |
-| `<leader>vca` | Code actions |
-| `<leader>vrr` | References |
-| `<leader>vrn` | Rename |
-| `<leader>f` | Format code |
+
+| Key           | Action              |
+| ------------- | ------------------- |
+| `gd`          | Go to definition    |
+| `K`           | Hover documentation |
+| `<leader>vca` | Code actions        |
+| `<leader>vrr` | References          |
+| `<leader>vrn` | Rename              |
+| `<leader>f`   | Format code         |
 
 ### Git (Fugitive)
-| Key | Action |
-|-----|--------|
+
+| Key          | Action     |
+| ------------ | ---------- |
 | `<leader>gs` | Git status |
 
 ### Code Runner
-| Key | Action |
-|-----|--------|
-| `<leader>r` | Run code |
+
+| Key          | Action       |
+| ------------ | ------------ |
+| `<leader>r`  | Run code     |
 | `<leader>rc` | Close runner |
-| `<leader>rp` | Run project |
+| `<leader>rp` | Run project  |
+
+### Code Folding
+
+| Key         | Action                                  |
+| ----------- | --------------------------------------- |
+| `<leader>z` | Toggle fold under cursor                |
+| `za`        | Toggle fold under cursor (standard vim) |
+| `zo`        | Open fold under cursor                  |
+| `zc`        | Close fold under cursor                 |
+| `zR`        | Open all folds in buffer                |
+| `zM`        | Close all folds in buffer               |
+| `zr`        | Open one fold level                     |
+| `zm`        | Close one fold level                    |
+| `zp`        | Preview fold content                    |
+| `zf`        | Create fold (normal/visual mode)        |
+| `zd`        | Delete fold                             |
+
+### REST Client
+
+| Key           | Action                  |
+| ------------- | ----------------------- |
+| `<leader>rh`  | Execute HTTP request    |
+| `<leader>rhp` | Preview request as curl |
+| `<leader>rhl` | Rerun last request      |
 
 ### Focus Modes
-| Key | Action |
-|-----|--------|
-| `<leader>zz` | Zen mode (90 width) |
+
+| Key          | Action                       |
+| ------------ | ---------------------------- |
+| `<leader>zz` | Zen mode (90 width)          |
 | `<leader>zZ` | Zen mode (80 width, minimal) |
-| `<leader>tw` | Toggle twilight |
+| `<leader>tw` | Toggle twilight              |
 
 ### Utilities
-| Key | Action |
-|-----|--------|
-| `<leader>u` | Toggle undotree |
+
+| Key          | Action               |
+| ------------ | -------------------- |
+| `<leader>u`  | Toggle undotree      |
 | `<leader>tt` | Toggle trouble panel |
-| `<C-a>` | Select all text |
+| `<C-a>`      | Select all text      |
 
 ## Color Schemes
 
 Switch themes using:
+
 ```vim
 :colorscheme catppuccin-mocha
 :colorscheme tokyonight-storm
@@ -131,6 +166,7 @@ Switch themes using:
 ```
 
 Or use the helper function:
+
 ```vim
 :lua ColorMyPencils("tokyonight-storm")
 ```
@@ -138,6 +174,7 @@ Or use the helper function:
 ## Supported Languages
 
 LSP support configured for:
+
 - **Web**: JavaScript, TypeScript, HTML, CSS, JSON
 - **Systems**: C, C++, Rust
 - **Scripting**: Python, Bash, Lua
@@ -175,6 +212,7 @@ This configuration is open source and available under the [MIT License](LICENSE)
 ## Credits
 
 This configuration is inspired by and built upon the work of many in the Neovim community, particularly:
+
 - [ThePrimeagen](https://github.com/ThePrimeagen) for the foundational structure
 - The maintainers of all the amazing plugins used
 
