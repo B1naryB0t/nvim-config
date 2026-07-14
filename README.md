@@ -132,11 +132,13 @@ sudo apt install ripgrep fd-find  # Ubuntu/Debian
 
 ### REST Client
 
-| Key           | Action                  |
-| ------------- | ----------------------- |
-| `<leader>rh`  | Execute HTTP request    |
-| `<leader>rhp` | Preview request as curl |
-| `<leader>rhl` | Rerun last request      |
+| Key           | Action                        |
+| ------------- | ----------------------------- |
+| `<leader>rh`  | Execute HTTP request          |
+| `<leader>rhp` | Preview request as curl       |
+| `<leader>rhl` | Rerun last request            |
+| `<leader>rha` | Run all HTTP requests in file |
+| `<leader>rhe` | Open .env file                |
 
 ### Focus Modes
 
@@ -208,14 +210,3 @@ Feel free to fork this configuration and make it your own! If you have improveme
 ## License
 
 This configuration is open source and available under the [MIT License](LICENSE).
-
-## Credits
-
-This configuration is inspired by and built upon the work of many in the Neovim community, particularly:
-
-- [ThePrimeagen](https://github.com/ThePrimeagen) for the foundational structure
-- The maintainers of all the amazing plugins used
-
----
-
-**Happy coding!**

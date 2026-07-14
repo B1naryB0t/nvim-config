@@ -71,9 +71,11 @@ return {
 
         -- Completion sources (order matters - higher priority first)
         sources = cmp.config.sources({
-          { name = "nvim_lsp", priority = 1000 },  -- LSP completions first
-          { name = "luasnip", priority = 750 },    -- Snippets second
-          { name = "path", priority = 250 },       -- File paths third
+          { name = "nvim_lsp", priority = 1000 },  -- LSP completions
+          { name = "obsidian", priority = 900 },
+          { name = "obsidian_new", priority = 900 },
+          { name = "luasnip", priority = 750 },    -- Snippets
+          { name = "path", priority = 250 },       -- File paths
         }, {
           { name = "buffer", priority = 50 },      -- Buffer words as fallback
         }),

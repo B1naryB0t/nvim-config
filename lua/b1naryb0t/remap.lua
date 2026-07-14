@@ -65,3 +65,14 @@ vim.keymap.set("n", "<leader>rp", ":RunProject<CR>",
 
 -- NOTE: LSP-specific keymaps are configured in mason.lua on_attach function
 -- NOTE: Plugin-specific keymaps are configured in their respective files
+
+-- === OBSIDIAN ===
+vim.keymap.set("n", "<leader>on", ":Obsidian new<CR>", { desc = "New note" })
+vim.keymap.set("n", "<leader>os", ":Obsidian quick_switch<CR>", { desc = "Switch note" })
+vim.keymap.set("n", "<leader>of", ":Obsidian search<CR>", { desc = "Find in vault" })
+vim.keymap.set("n", "<leader>od", ":Obsidian today<CR>", { desc = "Daily note" })
+vim.keymap.set("n", "<leader>ot", ":Obsidian new_from_template<CR>", { desc = "From template" })
+vim.keymap.set("n", "<leader>or", vim.lsp.buf.rename, { desc = "Rename note and update links" })
+vim.keymap.set("n", "<leader>ob", ":Obsidian backlinks<CR>", { desc = "Note backlinks" })
+vim.keymap.set("n", "<leader>oc", ":Obsidian toc<CR>", { desc = "Table of contents" })
+vim.keymap.set("n", "<leader>oo", ":Obsidian open<CR>", { desc = "Open in Obsidian app" })
